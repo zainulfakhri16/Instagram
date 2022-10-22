@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/belajar mobile/Instagram/app/src/main/res/layout/activity_list.xml" value="0.2" />
         <entry key="..\:/belajar mobile/Instagram/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/belajar mobile/Instagram/app/src/main/res/layout/card_view_design.xml" value="0.264" />
       </map>
     </option>
   </component>
