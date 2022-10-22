@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.view.ViewParent
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class CustomAdapter (private val mList: List<ItemsViewModel>) :
