@@ -2,7 +2,6 @@ package com.example.instagram
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -23,6 +22,12 @@ class MainActivity : AppCompatActivity() {
         val adapter = CustomAdapter(data)
         recyclerview.adapter = adapter
 
-        val recyclerView = findViewById<RecyclerView>(R.id.rv_post)
+        val recyclerViewpost = findViewById<RecyclerView>(R.id.rv_post)
+        val datapost = ArrayList<ItemsViewModelPost>()
+        for (a in 1 .. 10){
+            datapost.add(ItemsViewModelPost(R.drawable.add,"Zain" + a))
+        }
+        val adapterPost = CustomAdapterPost(datapost)
+        recyclerViewpost.adapter = adapterPost
     }
 }

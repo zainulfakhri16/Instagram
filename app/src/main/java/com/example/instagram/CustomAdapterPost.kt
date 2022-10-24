@@ -7,19 +7,19 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class CustomAdapter (private val mList: List<ItemsViewModel>) :
-    RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+class CustomAdapterPost (private val mList: List<ItemsViewModelPost>) :
+    RecyclerView.Adapter<CustomAdapterPost.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.card_view_design, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.card_post_design, parent, false)
         return ViewHolder(view)
 
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val ItemsViewModel = mList[position]
-        holder.imageView.setImageResource(ItemsViewModel.image)
-        holder.textView.text=ItemsViewModel.text
+        val ItemsViewModelPost = mList[position]
+        holder.imageView.setImageResource(ItemsViewModelPost.imagepost)
+        holder.textView.text=ItemsViewModelPost.textpost
     }
 
     override fun getItemCount(): Int {
