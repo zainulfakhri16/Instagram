@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         title ="Zain"
 
-        val recyclerview = findViewById<RecyclerView>(R.id.rv_post)
+        val recyclerview = findViewById<RecyclerView>(R.id.rv_sw)
         recyclerview.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
         val data = ArrayList<ItemsViewModel>()
 
