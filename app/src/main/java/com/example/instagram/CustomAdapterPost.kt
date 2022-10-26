@@ -11,7 +11,7 @@ class CustomAdapterPost (private val mList: List<ItemsViewModelPost>) :
     RecyclerView.Adapter<CustomAdapterPost.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.card_post_design, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.card_post_design ,parent, false)
         return ViewHolder(view)
 
     }
